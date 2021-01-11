@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root {
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+    --accent-blue: hsl(248, 32%, 49%);
+    --neutral-darkBlue: hsl(249, 10%, 26%);
+    --neutral-GrayishBlue: hsl(246, 25%, 77%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: var(--primary-red);
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    max-width: 663px;
+    margin: auto;
+}
+.wrapperV2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 663px;
+
+}
+
+h1 {
+    margin-top: 60px;
+    text-align: center;
+}
+.mainText {
+    text-align: center;
+    margin-top: 30px;
+}
+.mainBtn {
+    text-align: center;
+    background-color: var(--accent-blue);
+    margin-top: 35px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    height: 80px;
+    font-weight: 400;
+    box-shadow: 0px 5px 15px -7px var(--accent-blue);
+    cursor: pointer;
+}
+.mainBtn span {
+    font-weight: 600;
+}
+.wrapper form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    margin-top: 25px;
+    border-radius: 10px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 0px 14px 15px -7px grey;
+}
+input {
+    margin: 7px;
+    border-radius: 5px;
+    flex-basis: 55px;
+    border: 1px solid var(--neutral-GrayishBlue);
+    color: black;
+    padding-left: 16px;
+}
+input:focus {
+    outline: none;
+}
+form button {
+    background-color: var(--primary-green);
+    border: none;
+    border-radius: 4px;
+    margin: 7px;
+    height: 55px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+    border: none;
+}
+
+input::placeholder {
+    font-weight: 500;
+}
+.footerText {
+    color: var(--neutral-GrayishBlue);
+    font-size: 0.63rem;
+    text-align: center;
+}
+.footerText span {
+    color: var(--primary-red);
+    font-weight: 700;
+}
+@media(min-width:1440px) {
+    @media(min-width: 1440px) {
+        body {
+            background-image: url(./images/bg-intro-desktop.png);
+            display: flex;
+            justify-content: flex-end;
+            overflow: hidden;
+        }
+        .wrapper {
+            justify-items: center;
+            margin: 100px 100px;
+            
+        }
+        .wrapper form {
+            height: 530px;
+        }
+        input {
+            margin: 15px 15px 5px 15px;
+            border-radius: 7px;
+            flex-basis: 65px;
+        }
+        form button {
+            background-color: var(--primary-green);
+            border: none;
+            border-radius: 7px;
+            margin: 9px 15px 5px 15px;
+            height: 65px;
+        }
+        .footerText {
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        .wrapperV2 {
+            margin: 250px 80px;
+            width: 600px;
+        }
+        .wrapperV2 h1 {
+            font-size: 52px;
+            text-align: start;
+        }
+        .wrapperV2 p {
+            text-align: start;
+        }
+        
+    }
+}
+
